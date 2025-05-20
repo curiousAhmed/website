@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .faq-section {
+            margin-bottom: 20px;
+        }
+
+        .faq-heading {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #000; /* Black by default */
+            display: flex;
+            justify-content: space-between; /* Align items to opposite ends */
+            align-items: center;
+        }
+
+        .faq-heading:hover {
+            color: #673ab7; /* Purple hover color */
+        }
+
+        .faq-heading.active {
+            color: #673ab7; /* Purple when active */
+        }
+
+        .arrow1 {
+            transition: transform 0.3s ease; /* Smooth transition for arrow rotation */
+        }
+
+        .arrow1.up {
+            transform: rotate(180deg); /* Rotate arrow to point upward */
+        }
+
+        .faq-list {
+            display: none; /* Hide FAQ lists by default */
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <h1 class="title has-text-centered">Frequently Asked Questions</h1>
+
+        <!-- FAQ Sections -->
+        <div class="faq-section">
+            <h3 class="faq-heading">
+                Employee Management
+                <span class="arrow1"><i class="fa-solid fa-angle-down"></i></span>
+            </h3>
+            <div class="faq-list">
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Centralized database</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Shift Management</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Organizational Chart</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Disciplinary action records</span></div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3 class="faq-heading">
+                Attendance and Time Management
+                <span class="arrow1"><i class="fa-solid fa-angle-down"></i></span>
+            </h3>
+            <div class="faq-list">
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Employee Attendance Reports</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Efficient check-in/check-out</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Hourly and Overtime data</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Track Late Come and Early Out</span></div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3 class="faq-heading">
+                Leave and Holiday Management
+                <span class="arrow1"><i class="fa-solid fa-angle-down"></i></span>
+            </h3>
+            <div class="faq-list">
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Manage Employee leaves</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Robust Leave management</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Manage custom and national holidays</span></div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3 class="faq-heading">
+                Payroll and Contract Management
+                <span class="arrow1"><i class="fa-solid fa-angle-down"></i></span>
+            </h3>
+            <div class="faq-list">
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Employee Contracts Management</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Employee Allowances and Deductions</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Calculate Taxes</span></div>
+                <div class="faq-item"><i class="fa-regular fa-circle-check"></i><span class="faq-text">Generate Payslips</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for toggling FAQ lists -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqHeadings = document.querySelectorAll(".faq-heading");
+            const faqLists = document.querySelectorAll(".faq-list");
+
+            faqHeadings.forEach((heading, index) => {
+                const arrow = heading.querySelector(".arrow1");
+                const list = faqLists[index];
+
+                heading.addEventListener("click", () => {
+                    // Toggle the visibility of the FAQ list
+                    if (list.style.display === "none" || list.style.display === "") {
+                        list.style.display = "block";
+                        arrow.classList.add("up"); // Rotate the arrow to point upward
+                        heading.classList.add("active"); // Change color to purple
+                    } else {
+                        list.style.display = "none";
+                        arrow.classList.remove("up"); // Reset the arrow to point downward
+                        heading.classList.remove("active"); // Reset color to black
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

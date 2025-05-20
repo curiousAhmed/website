@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../static/css/bulma.min.css">
+    <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/hrpricing.css">
+    <link rel="stylesheet" href="../static/sal/sal.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>See our HR Subscription plans</title>
+    <meta name="description" content="Streamline your HR processes with FRIDAY's flexible, affordable, and scalable solutions. Trusted by businesses across the Pakistan. Get started today!">
+    <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '485510554197875');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=485510554197875&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-head" style="border-bottom: black solid 1px;">
+            <nav class="navbar">
+            <!-- Navbar Brand -->
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <img src="../static/images/logo.webp" alt="Logo of FRIDAY technologies" height="35" style="max-height: unset;">
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <!-- Navbar Menu -->
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end" style="margin-left: auto;">
+                <!-- Mega Dropdown: Solutions -->
+                
+                <!--Pricing-->
+                <span class="navbar-item">
+                  <a class="button is-white is-outlined" href="/hrpricing">
+                    <span>Pricing</span>
+                  </a>
+                </span>
+                <!-- Other Links -->
+                <span class="navbar-item">
+                  <a class="button is-white is-outlined" href="/about">
+                    <span>Contact Us</span>
+                  </a>
+                </span>
+                <!-- Regular Dropdowns -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="/blog">Resources</a>
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item" href="/blog#career">Career Guide</a>
+                      <a class="navbar-item" href="/blog#articles">Blog Articles</a>
+                      <a class="navbar-item" href="/blog#section3">E-books</a>
+                      <a class="navbar-item" href="/blog#section3">Tools</a>
+                    </div>
+                </div>
+                
+                <span class="navbar-item">
+                  <a class="button" href="https://jobs.thefridayhr.com" style="background-color: #f45025; color: #fff; border-radius:1rem; font-weight: 600;">
+                    Need a job?
+                  </a>
+                </span>
+              </div>
+            
+          </div>
+        </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title" style="font-size: 3.5rem; font-weight: 500; line-height: 1.1; color: #000000; margin-top: 5rem">
+                    Simplify HR with FRIDAY
+                </h1>
+                <h2 class="subtitle" style="font-size: 1.5rem; font-weight: 300; line-height: 1.1; color: #000000;">
+                    - Your Dedicated HR Manager + Powerful Software
+                </h2>
+                <a href="https://calendly.com/thefridayhr/friday-s-hr-services" style="all: unset;"><button id="demobtn">Speak with an expert</button></a>
+            </div>
+        </div>
+        </section>
+        <section class="section" style="padding-bottom: 1rem;">
+                <!-- Curved Container -->
+                <div class="curved-container">
+                        <div class="container has-text-centered">
+                            <button id="monthlyBtn" class="pricing-button active" onclick="toggleBilling('monthly')">Pay Monthly</button>
+                            <button id="annualBtn" class="pricing-button" onclick="toggleBilling('annual')">Pay Annually (15% off)</button>
+                            <br>
+                            
+                        </div>
+                        
+                <!-- Pricing Cards -->
+                <div class="container is-fullwidth">
+                    <div class="pricing-container">
+                        <!-- Base Plan -->
+                        <div class="pricing-card">
+                            <h2 class="plan-title">Base Plan</h2>
+                            <p class="plan-description">
+                                Ideal for small businesses with basic HR needs.Includes attendance tracking, leave management, and payroll processing.
+                            </p>
+                            <!-- Base Plan -->
+                            <p class="plan-price"><span id="basePrice">22k Pkr</span> <span class="is-size-6">pkr per month</span></p>
+                            <p class="annual-price"><span id="baseAnnualPrice">264k pkr</span>pkr billed annually</p>
+
+                            <button class="cta-button">
+                               <a href="https://wa.me/923279024800" style="all: unset;">Choose plan</a></button>
+
+                            <!-- Features List --><!-- Employee Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Employee Management  </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Centralized database</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Shift Management</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Organizational Chart</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Disciplinary action records</span></div>
+                                    </div>
+                                </div>
+                                <!-- Attendance and Time Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Attendance and Time Management  </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Employee Attendance Reports</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Efficient check-in/check-out</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Hourly and Overtime data</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Track Late Come and Early Out</span></div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Leave and Holiday Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Leave and Holiday Management  </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Manage Employee leaves</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Robust Leave management</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Manage custom and national holidays</span></div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Payroll and Contract Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Payroll and Contract Management  </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Employee Contracts Management</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Employee Allowances and Deductions</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Calculate Taxes</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Generate Payslips</span></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Standard Plan -->
+                        <div class="pricing-card popular">
+                            <div class="popular-tag">Most Popular</div>
+                            <h2 class="plan-title">Standard Plan</h2>
+                            <p class="plan-description">
+                                Suitable for growing businesses with advanced HR requirements.Adds performance management and enhanced reporting to the Base Plan.
+                            </p>
+                            <p class="plan-price"><span id="standardPrice">$110</span> <span class="is-size-6">per month</span></p>
+                            <p class="annual-price"><span id="standardAnnualPrice">$1,320</span> billed annually</p>
+                            <button class="cta-button"><a href="https://wa.me/923279024800" style="all: unset;">Choose plan</a></button>
+                                <div class="feature-item" style="margin-top: .7rem;"><i class="fas fa-check feature-icon"></i><span class="feature-text">Everything in Base ++ </span></div>
+                                <!-- Payroll and Contract Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Performance Management </h3>
+                                    <div class="feature-list" style="display: flex;">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Dedicated HR Manager</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Track Objectives & Key Results</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">360 degree Feedback</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Set and Manage Monthly/ Quarterly goals</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Periodic Performance reports</span></div>
+                                    </div>
+                                </div>
+                                <!-- Lite Hiring Support -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Lite Hiring support </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Upto 3 vacancies per month</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">From JD creation to Shortlisting</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Keep getting candidates as long as the role is open</span></div>
+                                    </div>
+                                </div>
+                                <!-- Asset Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Dedicated HR support </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Monthly / Bi-weekly meetings</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">20 hours/ month of Dedicated HR Manager support</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Employee growth plans</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Employee Performance reports</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Organizational structure design</span></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Premium Plan -->
+                        <div class="pricing-card">
+                            <h2 class="plan-title">Premium Plan</h2>
+                            <p class="plan-description">
+                                Best for enterprises needing comprehensive HR solutions.Offers a full HR suite, complete software access, and priority support.
+                            </p>
+                            <p class="plan-price"><span id="premiumPrice">$150</span> <span class="is-size-6">per month</span></p>
+                            <p class="annual-price"><span id="premiumAnnualPrice">$1,800</span> billed annually</p>
+                            <button class="cta-button"><a href="https://wa.me/923279024800" style="all: unset;">Choose plan</a></button>
+                            <div class="feature-item" style="margin-top: .7rem;"><i class="fas fa-check feature-icon"></i><span class="feature-text">Everything in Standard ++ </span></div>
+                            <!-- Pro Hiring Support -->
+                            <div class="feature-section">
+                                <h3 class="feature-heading">Pro Hiring support </h3>
+                                <div class="feature-list">
+                                    <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Upto 7 vacancies per month</span></div>
+                                    <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">From JD creation to Shortlisting</span></div>
+                                    <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Dedicated Hiring Manager</span></div>
+                                    <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Interview scheduling support</span></div>
+                                </div>
+                            </div>
+                                <!-- Asset Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Asset Management  </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Categorize and Manage various Assets</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Streamline Asset Requests</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Efficient Asset Allocation</span></div>
+                                    </div>
+                                </div>
+                                <!-- Asset Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Onboarding and Offboarding  </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Pre-defined oboarding flow</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Smooth Exit process</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Resignation letter management</span></div>
+                                    </div>
+                                </div>
+                                <!-- Asset Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Help-desk  </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Transparent ticket management</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Reliable Employee-HR interaction</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Detailed Knowledge base for employees</span></div>
+                                    </div>
+                                </div>
+                                <!-- Asset Management -->
+                                <div class="feature-section">
+                                    <h3 class="feature-heading">Dedicated HR Manager  </h3>
+                                    <div class="feature-list">
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">30 hours/ month of Dedicated HR Manager support</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Policy Making</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Employee Handbook design</span></div>
+                                        <div class="feature-item"><i class="fa-regular fa-circle-check"></i><span class="feature-text">Succession Planning</span></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p>*With every plan, get access to a dedicated HR manager who ensures compliance, drafts policies, and supports your team</p>
+                            <p>** A small setup fee will be charged in advance if you require access to our HRM Software.</p>
+            </div>
+    </section>
+    <section class="section" style="padding-top: .5rem;">
+        <h3 class="faqh3 has-text-centered">FAQs</h3>
+
+        <!-- FAQ Sections -->
+        <div class="faq-section">
+            <h3 class="faq-heading">
+                1. What makes FRIDAY different from other HR software providers?
+                <span class="arrow1"><i class="fa-solid fa-angle-down"></i></span>
+            </h3>
+            <div class="faq-list">
+                <p>Unlike most providers who only offer software, we pair our powerful HR tools with <b> dedicated HR managers</b> who act as an extension of your team. Whether it’s drafting policies, ensuring compliance, or resolving employee grievances, we’ve got you covered.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3 class="faq-heading">
+                2. How does the dedicated HR manager help my business?
+                <span class="arrow1"><i class="fa-solid fa-angle-down"></i></span>
+            </h3>
+            <div class="faq-list">
+                <p>Your dedicated HR manager provides tailored support, including:</p>
+                <ol style="margin-left: 3rem;">
+                    <li>Drafting employee <b> handbooks </b>and policies.</li>
+                    <li>Ensuring <b>compliance</b> with local labor laws.</li>
+                    <li>Resolving employee grievances and <b> HR challenges.</b></li>
+                </ol>
+                <p>This allows you to focus on running your business while we handle the HR workload.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3 class="faq-heading">
+                3. Is HR Subscription right for my startup / SME?
+                <span class="arrow1"><i class="fa-solid fa-angle-down"></i></span>
+            </h3>
+            <div class="faq-list">
+                <p>Our Plans include core HR features like <b> attendance tracking, payroll processing and Performance Management</b>. They are designed for small businesses (1–50 employees) that need essential HR automation without unnecessary complexity and financial stress. If you’re looking for a cost-effective way to manage HR tasks, these plans are perfect for you.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h3 class="faq-heading">
+                4. Is Hiring included in your plans as well?
+                <span class="arrow1"><i class="fa-solid fa-angle-down"></i></span>
+            </h3>
+            <div class="faq-list">
+                <p>Yes, our standard and premium plans include hiring support as well, which means you don't have to worry about this critical aspect of running a business either.</p>
+            </div>
+        </div>
+    </section>
+    <!--Section-7-->
+<section class="section" style="padding-top: 0rem;">
+    <div class="container" style=" background-color: #fff; border-radius: 1.5rem; border:1px solid black;">
+        <div class="container is-fluid has-text-centered" style="background-color: #f4f6fc; border-radius: 1.5rem; ">
+            <h2 id="s7h2">Not sure why you need HR?</h2>
+            <div class="columns ">
+                <div class="column is-12-mobile is-4-tablet is-4-desktop " style="    border-right: #000000 solid 1px;">
+                    <p class="s7p1">Research shows that companies with highly engaged employees are 17% more productive and upto 21% more profitable.</p>
+                    <p class="s7p2">-Forbes</p>
+                </div>
+                <div class="column is-12-mobile is-4-tablet is-4-desktop" style="    border-right: #000000 solid 1px;">
+                    <p class="s7p1">Companies prioritizing positive workplace culture get up to a 19% increase in sales, a 29% higher profit, and a 72% decrease in attrition rate.</p>
+                    <p class="s7p2">-G2 HR Statistics 2024</p>
+                </div>
+                <div class="column is-12-mobile is-4-tablet is-4-desktop" >
+                    <p class="s7p1">70% of employees report that the quality of the team leader creates more engaged employees and work relationships.</p>
+                    <p class="s7p2">-Gallup 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered" style="padding-block: 4rem;">
+                <h2 style="font-size: 2.8rem; font-weight: 300; line-height: 1.1; margin-left: 2rem; margin-right: 1rem; color: black; --sal-duration:1s;" data-sal="slide-up">Don't let HR Stress you.</h2>  
+                <a href="https://calendly.com/thefridayhr/friday-s-hr-services" style="all: unset;"><button id="s7btn" data-sal="slide-up" style="--sal-duration: 1s;">Get free consultation</button></a>
+        </div>
+    </div>
+</section>
+<!--                                 Footer         -->
+<footer id="footer">
+    <div class="container-fluid" style="margin-top:.5rem;">
+        <div class="columns" style="margin-bottom:2rem;">
+            <div class="column is-two-fifths" id="footerc1">
+                <figure>
+                    <img src="../static/images/inverted-logo.png" alt="logo of FRIDAY" srcset="">
+                </figure>
+                <h2 id="footerh2">Stay in the loop and sign up for our newsletter.</h2>
+                <div class="field has-addons" >
+                    <div class="control is-expanded has-icons-left">
+                        <form action="/email_list" method="post" style="display: flex; ">
+                            <div id="formdiv" >
+                                <input id="formin" class="input is-80" type="email" placeholder="Enter your email" name="email">
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                <div style="display: inline-flex; flex-direction: row;">
+                    <a href="https://wa.me/923279024800"><i class="fa-brands fa-square-whatsapp ficon"></i></a>
+                    <a href="https://www.instagram.com/the_friday_hr"><i class="fa-brands fa-square-instagram ficon"></i></a>
+                    <a href="https://www.facebook.com/fridayexp"><i class="fa-brands fa-square-facebook ficon"></i></a>
+                    <a href="https://www.linkedin.com/company/thefridayhr/"><i class="fa-brands fa-linkedin ficon"></i></a>
+                    <a href="mailto:hello@thefridayhr.com"><i class="fa-solid fa-envelope ficon"></i></a>
+                </div>
+            </div>
+            <div class="column is-two-fifths" id="footerc3">
+                <div class="columns is-mobile">
+                    <div class="column is-half">
+                        <ul class="ful">Company
+                            <li style="padding-top: 0.5rem;"><a href="/index">Home</a></li>
+                            <li><a href="/hrpricing">Pricing</a></li>
+                            <li><a href="/hrsoftware">HR Software </a></li>
+                            <li><a href="https://jobs.thefridayhr.com">Find a job</a></li>
+                            <li><a href="/about">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-half">
+                        <ul class="ful">Resources
+                            <li style="padding-top: 0.5rem;"><a href="/blog">Blog</a></li>
+                            <li><a href="/blog#section3">E-books</a></li>
+                            <li><a href="/blog#career">Career-guidance</a></li>
+                            <li><a href="/blog#section3">Helpful tools</a></li>
+                             
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-fifth is-hidden-mobile " style="text-align: right; padding-right: 2.5rem;">
+                <blockquote>
+                    "Great things in business are never done by one person; they're done by a team of people."<br>
+                    <cite>Steve Jobs</cite>
+                </blockquote>
+            </div>
+        </div>
+        <div id="footerend">
+        <p>Friday Technologies and Systems. All rights reserved.</p>
+        <p><a href="/privacy">Terms and conditions</a></p>
+    </div>
+    </div>
+</footer>
+
+<script src="../static/js/combined.js"></script>
+
+<script>
+    let currentBillingType = 'monthly'; // Default to monthly billing
+
+    // Toggle billing type
+    function toggleBilling(type) {
+        currentBillingType = type;
+        document.getElementById("monthlyBtn").classList.toggle("active", type === 'monthly');
+        document.getElementById("monthlyBtn").classList.toggle("inactive", type !== 'monthly');
+        document.getElementById("annualBtn").classList.toggle("active", type === 'annual');
+        document.getElementById("annualBtn").classList.toggle("inactive", type !== 'annual');
+        updatePrices();
+    }
+
+    // Update prices dynamically
+    function updatePrices() {
+        // Fixed base prices
+const basePriceMonthly = 25000;
+const standardPriceMonthly = 35000;
+const premiumPriceMonthly = 45000;
+
+// Apply 15% discount for annual billing
+const applyDiscount = currentBillingType === 'annual' ? 0.85 : 1;
+
+// Helper function to format numbers as "Xk"
+function formatPrice(price) {
+    return `${Math.round(price / 1000)}k`;
+}
+
+// Calculate final prices
+const adjustedBasePrice = basePriceMonthly * applyDiscount;
+const adjustedStandardPrice = standardPriceMonthly * applyDiscount;
+const adjustedPremiumPrice = premiumPriceMonthly * applyDiscount;
+
+// Update displayed prices with "Xk" format
+document.getElementById("basePrice").textContent = formatPrice(adjustedBasePrice);
+document.getElementById("baseAnnualPrice").textContent = formatPrice(basePriceMonthly * 12 * applyDiscount);
+
+document.getElementById("standardPrice").textContent = formatPrice(adjustedStandardPrice);
+document.getElementById("standardAnnualPrice").textContent = formatPrice(standardPriceMonthly * 12 * applyDiscount);
+
+document.getElementById("premiumPrice").textContent = formatPrice(adjustedPremiumPrice);
+document.getElementById("premiumAnnualPrice").textContent = formatPrice(premiumPriceMonthly * 12 * applyDiscount);
+    }
+
+    // Initialize page
+    window.onload = function () {
+        updatePrices(); // Ensure prices are updated on page load
+    };
+</script>
+    <script>
+       document.addEventListener("DOMContentLoaded", () => {
+  // Select all feature headings and lists
+  const featureHeadings = document.querySelectorAll(".feature-heading");
+  const featureLists = document.querySelectorAll(".feature-list");
+
+  featureHeadings.forEach((heading, index) => {
+    const arrow = heading.querySelector(".arrow");
+    const list = featureLists[index];
+
+    // Add click event listener to each heading
+    heading.addEventListener("click", () => {
+      // Toggle the visibility of the corresponding feature list
+      if (list.style.display === "none" || list.style.display === "") {
+        list.style.display = "block";
+        arrow.classList.remove("up"); // Reset arrow to point downward
+      } else {
+        list.style.display = "none";
+        arrow.classList.add("up"); // Rotate arrow to point left
+      }
+    });
+  });
+});
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const faqHeadings = document.querySelectorAll(".faq-heading");
+        const faqLists = document.querySelectorAll(".faq-list");
+
+        faqHeadings.forEach((heading, index) => {
+            const arrow = heading.querySelector(".arrow1");
+            const list = faqLists[index];
+
+            heading.addEventListener("click", () => {
+                // Toggle the visibility of the FAQ list
+                if (list.style.display === "none" || list.style.display === "") {
+                    list.style.display = "block";
+                    arrow.classList.add("up"); // Rotate the arrow to point upward
+                    heading.classList.add("active"); // Change color to purple
+                } else {
+                    list.style.display = "none";
+                    arrow.classList.remove("up"); // Reset the arrow to point downward
+                    heading.classList.remove("active"); // Reset color to black
+                }
+            });
+        });
+    });
+</script>
+<script src="../static/sal/sal.js"></script>
+<script>
+    sal({
+        threshold: 0.5,
+        once: false,
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Department Activities</title>
+  <!-- Include Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    /* Custom background colors for each activity */
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .column.is-8,
+      .column.is-4 {
+        width: 100%;
+      }
+    }
+
+    .inside-clm {
+      padding: 20px;
+      border-radius: 1rem;
+    }
+    .h3ts{
+      font-size: 2rem;
+      line-height: .8;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .pts{
+      
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <!-- Main Columns Group -->
+      <div class="columns is-desktop" style="align-items: center;">
+        <!-- First Column (66%) -->
+        <div class="column is-8 bg1">
+
+          <!-- Row 1: Two Columns -->
+          <div class="columns">
+            <div class="column bg2">
+              <div class="inside-clm" style="background-color: gold;">
+                <h3 class="h3ts">Recruitment & Hiring</h3>
+                <p class="pts">Managing job postings, screening candidates, and conducting interviews.</p>
+              </div>
+            </div>
+            <div class="column bg3">
+              <div class="inside-clm" style="background-color: coral;">
+                <h3 class="h3ts">Employee Onboarding</h3>
+                <p class="pts">Welcome new hires, provide orientation, and integrate them into the company culture.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2: One Column -->
+          <div class="columns">
+            <div class="column bg4">
+              <div class="inside-clm" style="background-color: blanchedalmond;">
+                <h3 class="h3ts">Training & Development</h3>
+                <p class="pts">Offer professional development programs and skill-building workshops.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Column (33%) -->
+        <div class="column is-4 bg5">
+          <div class="inside-clm" style="background-color: cornflowerblue; height: 17pc">
+            <h3 class="h3ts">Performance Management</h3>
+            <p class="pts"> Track employee performance, conduct reviews, and set goals for improvement.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="columns">
+        <div class="column is-4 bg6">
+          <div class="inside-clm" style="background-color: burlywood;">
+            <h3 class="h3ts">Payroll & Benefits Administration</h3>
+            <p class="pts">Manage salaries, bonuses, health benefits, and other compensation packages.</p>
+          </div>
+        </div>
+        <div class="column is-8 bg1">
+          <div class="inside-clm" style="background-color: tomato;">
+            <h3 class="h3ts">Employee Relations</h3>
+            <p class="pts">Ensure a positive work environment, address conflicts, and support team morale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

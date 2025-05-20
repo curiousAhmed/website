@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/testing2.css">
+    <link rel="stylesheet" href="../static/css/bulma.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>Business Health Quiz</title>
+</head>
+<body>
+    <section class="section" style="padding-top: 0rem;">
+        <div class="container has-text-centered">
+            <h2 id="s4h2">Do you need HR?</h2>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <p id="quizp1">Find out if your business is headed in the right direction, or something needs to change.</p>
+                </div>
+                <div class="column is-two-thirds has-text-left" style="margin-left: 2rem;">
+                    <form id="quizForm">
+                        <!-- Group 1 -->
+                        <div class="question-group active">
+                            <p>1. How long do employees stay with your company?</p>
+                            <label><input type="radio" name="q1" value="3"> Less than 6 months</label><br>
+                            <label><input type="radio" name="q1" value="6"> 6 months to 1 year</label><br>
+                            <label><input type="radio" name="q1" value="10"> More than 1 year</label><br>
+                
+                            <p>2. How quickly do you fill vacant positions?</p>
+                            <label><input type="radio" name="q2" value="3"> More than 3 months</label><br>
+                            <label><input type="radio" name="q2" value="6"> 1-3 months</label><br>
+                            <label><input type="radio" name="q2" value="10"> Less than 1 month</label><br>
+                        </div>
+                
+                        <!-- Group 2 -->
+                        <div class="question-group">
+                            <p>3. Do you set and track goals for employees?</p>
+                            <label><input type="radio" name="q3" value="3"> Rarely</label><br>
+                            <label><input type="radio" name="q3" value="6"> Sometimes</label><br>
+                            <label><input type="radio" name="q3" value="10"> Always</label><br>
+                
+                            <p>4. Do you measure employee productivity?</p>
+                            <label><input type="radio" name="q4" value="3"> No</label><br>
+                            <label><input type="radio" name="q4" value="6"> Occasionally</label><br>
+                            <label><input type="radio" name="q4" value="10"> Yes</label><br>
+                        </div>
+                
+                        <!-- Group 3 -->
+                        <div class="question-group">
+                            <p>5. Do you have a structured performance review system?</p>
+                            <label><input type="radio" name="q5" value="3"> No</label><br>
+                            <label><input type="radio" name="q5" value="6"> Partially</label><br>
+                            <label><input type="radio" name="q5" value="10"> Yes</label><br>
+                
+                            <p>6. Do employees have clear career paths?</p>
+                            <label><input type="radio" name="q6" value="3"> No</label><br>
+                            <label><input type="radio" name="q6" value="6"> Somewhat</label><br>
+                            <label><input type="radio" name="q6" value="10"> Yes</label><br>
+                        </div>
+                
+                        <button type="button" id="backButton" style="display: none;">Back</button>
+                        <button type="button" id="nextButton">Next</button>
+                        <button type="submit" id="submitButton" style="display: none;">Submit</button>
+                    </form>
+                
+                    <div id="result" style="display: none;">
+                        <h2>Your Business Health Score</h2>
+                        <p id="scoreText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        const groups = document.querySelectorAll('.question-group');
+        const nextButton = document.getElementById('nextButton');
+        const backButton = document.getElementById('backButton');
+        const submitButton = document.getElementById('submitButton');
+        const resultDiv = document.getElementById('result');
+        const scoreText = document.getElementById('scoreText');
+        let currentGroupIndex = 0;
+
+        nextButton.addEventListener('click', () => {
+            // Validate current group
+            const currentGroup = groups[currentGroupIndex];
+            const inputs = currentGroup.querySelectorAll('input[type="radio"]');
+            const isAnswered = Array.from(inputs).some(input => input.checked);
+            if (!isAnswered) {
+                alert('Please answer all questions before proceeding.');
+                return;
+            }
+
+            // Move to the next group
+            groups[currentGroupIndex].classList.remove('active');
+            currentGroupIndex++;
+
+            if (currentGroupIndex < groups.length) {
+                groups[currentGroupIndex].classList.add('active');
+            }
+
+            // Toggle buttons
+            if (currentGroupIndex === groups.length - 1) {
+                nextButton.style.display = 'none';
+                submitButton.style.display = 'inline-block';
+            }
+            backButton.style.display = 'inline-block';
+        });
+
+        backButton.addEventListener('click', () => {
+            // Move to the previous group
+            groups[currentGroupIndex].classList.remove('active');
+            currentGroupIndex--;
+
+            if (currentGroupIndex >= 0) {
+                groups[currentGroupIndex].classList.add('active');
+            }
+
+            // Toggle buttons
+            if (currentGroupIndex === 0) {
+                backButton.style.display = 'none';
+            }
+            nextButton.style.display = 'inline-block';
+            submitButton.style.display = 'none';
+        });
+
+        document.getElementById('quizForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Calculate score
+            let totalScore = 0;
+            const inputs = document.querySelectorAll('input[type="radio"]:checked');
+            inputs.forEach(input => {
+                totalScore += parseInt(input.value, 10);
+            });
+
+            // Display results
+            resultDiv.style.display = 'block';
+            scoreText.textContent = `Your score is ${totalScore} out of 60. ${getScoreFeedback(totalScore)}`;
+
+            // Hide form
+            document.getElementById('quizForm').style.display = 'none';
+        });
+
+        function getScoreFeedback(score) {
+            if (score >= 50) return 'Your business is in great shape!';
+            if (score >= 30) return 'Your business has room for improvement.';
+            return 'Your business might need immediate attention.';
+        }
+    </script>
+</body>
+</html>

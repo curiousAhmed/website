@@ -1,0 +1,172 @@
+<section class="hero ">
+        <div class="hero-head" style="background-color: #fff; border-bottom: 2px solid #bc9df6;">
+            <nav class="navbar">
+                <!-- Navbar Brand -->
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="/">
+                    <img src="../static/images/logo.webp" alt="FRIDAY Technologies Logo" height="35" style="max-height: unset;">
+                  </a>
+                  <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+              
+                <!-- Navbar Menu -->
+                <div id="navbarMenu" class="navbar-menu">
+                  <div class="navbar-end" style="margin-left: auto;">
+                    <!-- Solutions Mega Dropdown -->
+                    <div class="navbar-item has-dropdown is-hoverable is-mega">
+                      <a class="navbar-link" href="/solutions">Solutions</a>
+                      <div class="navbar-dropdown">
+                        <div class="container is-fluid">
+                          <div class="columns">
+                            <!-- Column 1: Hiring Solutions -->
+                            <div class="column">
+                              <h3 class="title is-6">Hiring Solutions</h3>
+                              <a class="navbar-item" href="/full-cycle-recruitment">
+                                Full-Cycle Recruitment
+                              </a>
+                              <a class="navbar-item" href="/executive-search">
+                                Executive Search
+                              </a>
+                              <a class="navbar-item" href="/open-roles">
+                                Open Roles
+                              </a>
+                            </div>
+                            <!-- Column 2: HR Solutions -->
+                            <div class="column">
+                              <h3 class="title is-6">HR Solutions</h3>
+                              <a class="navbar-item" href="/hr-software">
+                                HR Software <span class="tag is-primary">New</span>
+                              </a>
+                              <a class="navbar-item" href="/dedicated-hr-managers">
+                                Dedicated HR Managers
+                              </a>
+                              <a class="navbar-item" href="/hr-compliance">
+                                Compliance & Strategy
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Standalone Use Cases Dropdown -->
+
+                      <!-- Solutions Mega Dropdown -->
+                    <div class="navbar-item has-dropdown is-hoverable is-mega">
+                        <a class="navbar-link" href="/solutions">Use Cases</a>
+                        <div class="navbar-dropdown">
+                            <div class="container is-fluid">
+                                <div class="columns">
+                              <!-- Column 1: Hiring Solutions -->
+                                    <div class="column">
+                                        <h3 class="title is-6">By Challenge</h3>
+                                        <a class="navbar-item" href="/full-cycle-recruitment">
+                                        Full-Cycle Recruitment
+                                        </a>
+                                        <a class="navbar-item" href="/executive-search">
+                                        Executive Search
+                                        </a>
+                                        <a class="navbar-item" href="/open-roles">
+                                        Open Roles
+                                        </a>
+                                    </div>
+                                    <!-- Column 2: HR Solutions -->
+                                    <div class="column">
+                                        <h3 class="title is-6">By Industry</h3>
+                                        <a class="navbar-item" href="/hr-software">
+                                        HR Software 
+                                        </a>
+                                        <a class="navbar-item" href="/dedicated-hr-managers">
+                                        Dedicated HR Managers
+                                        </a>
+                                        <a class="navbar-item" href="/hr-compliance">
+                                        Compliance & Strategy
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <!-- Main Pricing Link -->
+                    <a class="navbar-item" href="/pricing">
+                      Pricing
+                    </a>
+              
+                    <!-- Resources Dropdown -->
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link" href="/resources">Resources</a>
+                      <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/career-guide">Career Guide</a>
+                        <a class="navbar-item" href="/blog">Blog</a>
+                        <a class="navbar-item" href="/e-books">E-books</a>
+                        <a class="navbar-item" href="/tools">HR Tools</a>
+                      </div>
+                    </div>
+              
+                    <!-- Contact & CTA -->
+                    <a class="navbar-item" href="/contact">Contact</a>
+                    <span class="navbar-item">
+                      <a class="button " href="/request-demo" 
+                         style="background: linear-gradient(161deg, #6734cf, #f45025);
+                         padding-inline: 1rem;
+                         padding-bottom: .35rem;
+                         border-radius: 1.5rem;
+                         padding-top: .25rem;
+                         color: #fff;
+                         box-shadow: 0rem 0rem 6px 1px #f14668;
+                         border: 1px solid white;">
+                        Book a Demo
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <div class="hero-body" style=" padding-inline: 1rem; ">
+      <div class="container" style="margin-top: 4.5rem; margin-left: 2rem;">
+        <div class="columns is-vcentered">
+          <!-- Text Column -->
+          <div class="column">
+            <p style="font-size: 1.5rem;">Meet AIRA</p>
+            <h2 style="font-size: 3rem; font-weight: 900; line-height: 1;">Your AI-powered Human Resource Partner (HR-AI)</h1>
+            <p class="subtitle is-4">
+              Get all the help you need to manage your team effectively!
+            </p>
+            <a href="#" class="button is-link is-rounded" style="background-color: #f45025; padding: 1.5rem 2rem; font-size: 1.2rem;">Join waitlist</a>
+          <div class="columns is-multiline" style="margin-top: 1rem;">
+            <div class="column is-half">
+              <p class="p1">Line1</p>
+              <p class="p2">main stuff</p>
+              <p class="p3">line2</p>
+            </div>
+            <div class="column is-half">
+              <p class="p1">Line1</p>
+              <p class="p2">main stuff</p>
+              <p class="p3">line2</p>
+            </div>
+            <div class="column is-half">
+              <p class="p1">Line1</p>
+              <p class="p2">main stuff</p>
+              <p class="p3">line2</p>
+            </div>
+            <div class="column is-half">
+              <p class="p1">Line1</p>
+              <p class="p2">main stuff</p>
+              <p class="p3">line2</p>
+            </div>
+          </div>
+          </div>
+          <!-- Image Column -->
+          <div class="column image-container1">
+            <img src="https://via.placeholder.com/500x300" alt="Placeholder Image">
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
