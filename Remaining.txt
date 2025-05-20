@@ -1,0 +1,40 @@
+
+Remaining Pages:
+1- Vacancies page
+------------------------------------------------
+Fonts:
+1- Poppins
+2- Trillium
+3- Work Sans
+------------------------------------------------
+Animation framwork:
+Sal
+data-sal="slide-up" style="--sal-duration: 1s;"
+------------------------------
+Remaining Tasks:
+
+** Testing
+---Mobile
+All left
+
+
+---Desktop
+1- About
+2- posts
+3- candidates
+
+
+
+Done in both:
+1- Blog
+2- Categories
+3- Index
+4- Form
+------------------------------
+
+3- Navbar stuff
+4- SEO activities
+5- Make a pricing page
+5- Deployment
+6- Images for blog post
+ 
